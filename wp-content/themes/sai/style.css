@@ -1,0 +1,389 @@
+/* line 1, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  vertical-align: baseline; }
+
+/* line 1, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+body {
+  line-height: 1; }
+
+/* line 1, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 1, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 1, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 1, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 1, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 1, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+.clear {
+  clear: both; }
+
+/* line 2, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important; }
+
+/* line 26, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 30, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+body {
+  font-family: "Open Sans", sans-serif; }
+
+/* line 35, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+.innerContent {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1440px; }
+
+/* line 41, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+a {
+  text-decoration: none; }
+
+/* line 45, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+#container {
+  height: 100vh;
+  width: 100%; }
+
+/* line 54, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+.upperHeader {
+  width: 100%;
+  background-color: #232323;
+  color: #d6d6d6;
+  padding: 25px 0px;
+  font-weight: 300;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+  font-size: 14px; }
+  /* line 67, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .upperHeader .innerContent {
+    display: flex;
+    justify-content: space-between; }
+
+/* line 73, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+.headerContactInfo {
+  display: flex;
+  align-items: center; }
+  /* line 77, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .headerContactInfo .headerAddress {
+    text-transform: uppercase;
+    margin-right: 10px;
+    white-space: nowrap; }
+  /* line 82, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .headerContactInfo .divide {
+    color: #a31a1a;
+    margin-right: 10px;
+    font-size: 1.3em; }
+  /* line 87, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .headerContactInfo .headerPhone1 {
+    margin-right: 2px;
+    white-space: nowrap;
+    color: #d6d6d6; }
+  /* line 92, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .headerContactInfo .headerPhone2 {
+    margin-right: 2px;
+    white-space: nowrap;
+    color: #d6d6d6; }
+
+/* line 100, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+.lowerHeader {
+  width: 100%;
+  background-color: #232323;
+  color: #d6d6d6;
+  padding: 20px 0px;
+  font-weight: 300;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  transition: all 200ms ease;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out; }
+  /* line 111, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .lowerHeader .innerContent {
+    display: flex;
+    justify-content: space-between; }
+
+/* line 117, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+.headerMenu {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  /* line 123, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .headerMenu a {
+    color: #d6d6d6;
+    text-transform: uppercase;
+    transition: all 200ms ease;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out; }
+    /* line 127, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+    .headerMenu a:hover {
+      color: #a31a1a; }
+
+/* line 133, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+.socialMediaContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+  min-width: 150px; }
+  /* line 140, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .socialMediaContainer a {
+    cursor: pointer; }
+    /* line 143, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+    .socialMediaContainer a path {
+      fill: #d6d6d6;
+      transition: all 200ms ease;
+      -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out; }
+    /* line 148, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+    .socialMediaContainer a:hover path {
+      fill: #a31a1a; }
+
+/* line 158, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+#hero {
+  background-color: #591616;
+  background-image: url("images/pattern.png");
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; }
+  /* line 168, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  #hero svg {
+    display: none;
+    height: 350px;
+    width: 350px; }
+  /* line 173, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  #hero .ribbonGrad {
+    width: 75px;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d6b881+0,7c6a46+100 */
+    background: #d6b881;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #d6b881 0%, #7c6a46 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #d6b881 0%, #7c6a46 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #d6b881 0%, #7c6a46 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6b881', endColorstr='#7c6a46',GradientType=0 );
+    /* IE6-9 */
+    position: absolute;
+    top: 0px;
+    right: 10%;
+    transform: rotate(20deg) translateY(100%);
+    opacity: 0;
+    transition: all 1000ms ease;
+    -webkit-transition: all 1000ms ease-in-out;
+    -moz-transition: all 1000ms ease-in-out;
+    -ms-transition: all 1000ms ease-in-out;
+    -o-transition: all 1000ms ease-in-out; }
+  /* line 191, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  #hero .ribbonGrad.active {
+    transform: rotate(20deg) translateY(0);
+    opacity: 1; }
+
+/* line 202, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+.openTable {
+  width: 65%;
+  font-size: 14px;
+  text-transform: uppercase; }
+  /* line 207, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .openTable .reserve {
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 15px; }
+
+/* line 217, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+.powered-by-open-table {
+  display: none; }
+
+/* line 221, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+.otw-wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+/* line 226, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+.otw-input-wrap {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  margin-right: 10px; }
+  /* line 232, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .otw-input-wrap .selectric-wrapper {
+    width: 100%; }
+    /* line 234, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+    .otw-input-wrap .selectric-wrapper .label {
+      font-size: 14px;
+      line-height: 1em !important;
+      margin: 0 !important;
+      height: auto !important;
+      padding: 10px 0px 10px 1rem; }
+
+/* line 245, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+.otw-button-wrap .otw-submit {
+  height: 100%;
+  border: 0px;
+  background-color: white;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+/* line 257, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+#date-otw_widget-2 {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  height: 100%;
+  padding-left: 1rem;
+  cursor: pointer; }
+
+/* line 268, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+.selectric .button {
+  height: 100% !important; }
+
+/* line 276, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+.headerMobileButton {
+  display: none;
+  cursor: pointer; }
+  /* line 279, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .headerMobileButton svg {
+    height: 35px;
+    width: 35px;
+    stroke: #d6d6d6; }
+
+/* line 286, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+.headerMobileMenu {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 35px;
+  display: none; }
+  /* line 296, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .headerMobileMenu .closeMenu {
+    position: absolute;
+    top: 20px;
+    right: 3%;
+    font-size: 40px;
+    cursor: pointer; }
+  /* line 304, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .headerMobileMenu .menuLinks {
+    margin-top: 30px; }
+    /* line 306, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+    .headerMobileMenu .menuLinks .headerMenuPages {
+      text-align: center;
+      padding: 10px;
+      font-size: 20px; }
+      /* line 310, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+      .headerMobileMenu .menuLinks .headerMenuPages a {
+        color: #d6d6d6;
+        transition: all 200ms ease;
+        -webkit-transition: all 200ms ease-in-out;
+        -moz-transition: all 200ms ease-in-out;
+        -ms-transition: all 200ms ease-in-out;
+        -o-transition: all 200ms ease-in-out; }
+        /* line 313, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+        .headerMobileMenu .menuLinks .headerMenuPages a:hover {
+          color: #a31a1a; }
+  /* line 320, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .headerMobileMenu .openTableMobile {
+    max-width: 450px;
+    margin: 25px auto;
+    padding: 10px;
+    border-top: 1px solid #d6d6d6; }
+    /* line 325, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+    .headerMobileMenu .openTableMobile .reserve {
+      font-size: 18px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 15px; }
+    /* line 332, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+    .headerMobileMenu .openTableMobile #date-otw_widget-2 {
+      height: 36px; }
+    /* line 335, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+    .headerMobileMenu .openTableMobile .otw-wrapper {
+      flex-direction: column; }
+      /* line 337, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+      .headerMobileMenu .openTableMobile .otw-wrapper .otw-input-wrap {
+        width: 100%; }
+      /* line 340, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+      .headerMobileMenu .openTableMobile .otw-wrapper .otw-button-wrap {
+        margin-top: 15px;
+        text-align: center; }
+        /* line 343, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+        .headerMobileMenu .openTableMobile .otw-wrapper .otw-button-wrap input {
+          padding: 5px 10px; }
+  /* line 350, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .headerMobileMenu .socialMediaContainer {
+    margin: auto;
+    margin-top: 20px; }
+
+@media screen and (max-width: 672px) {
+  /* line 357, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .headerContactInfo {
+    font-size: 10px; }
+  /* line 360, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .headerphone1 {
+    margin-bottom: 1px; } }
+
+@media screen and (max-width: 960px) {
+  /* line 369, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .ribbonGrad {
+    opacity: 0 !important; }
+  /* line 372, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .headerMenu {
+    display: none; }
+  /* line 376, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .headerPhone1, .headerPhone2 {
+    display: inline-block; }
+  /* line 380, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .lowerHeader {
+    transform: translateY(100%); }
+  /* line 384, /Users/Tommy/Design Files/Web/_clients/sai/wp-content/themes/sai/style.scss */
+  .headerMobileButton {
+    display: block; } }
+
+/*# sourceMappingURL=style.css.map */

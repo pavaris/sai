@@ -1,0 +1,391 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important}
+
+$saiGray: #232323;
+$saiGrayOp: rgba(35,35,35,0.95);
+$saiWhite: #d6d6d6;
+$saiRed: #a31a1a;
+$saiDarkRed: #591616;
+$oxygen: 'Oxygen', sans-serif;
+$openSans: 'Open Sans', sans-serif;
+
+@mixin transitionEase($time){
+     transition: all $time ease;
+    -webkit-transition: all $time ease-in-out;
+    -moz-transition: all $time ease-in-out;
+    -ms-transition: all $time ease-in-out;
+    -o-transition: all $time ease-in-out;   
+}
+
+
+
+///////////////////////////
+//    general            //
+///////////////////////////
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $openSans;
+}
+
+
+.innerContent{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#container{
+    height: 100vh;
+    width: 100%;
+}
+
+
+///////////////////////////
+//    header.php         //
+///////////////////////////
+.upperHeader{
+    width: 100%;
+    background-color: $saiGray;
+    color: $saiWhite;
+    padding: 25px 0px;
+    font-weight: 300;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+    font-size: 14px;
+    .innerContent{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.headerContactInfo{
+    display: flex;
+    align-items: center;
+    
+    .headerAddress{
+        text-transform: uppercase;
+        margin-right: 10px;
+        white-space: nowrap;
+    }
+    .divide{
+        color: $saiRed;
+        margin-right: 10px;
+        font-size: 1.3em;
+    }
+    .headerPhone1{
+        margin-right: 2px;
+        white-space: nowrap;
+        color: $saiWhite;
+    }
+    .headerPhone2{
+        margin-right: 2px;
+        white-space: nowrap;
+        color: $saiWhite;
+    }
+}
+
+
+.lowerHeader{
+    width: 100%;
+    background-color: $saiGray;
+    color: $saiWhite;
+    padding: 20px 0px;
+    font-weight: 300;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    @include transitionEase(200ms);
+    .innerContent{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.headerMenu{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    a{
+        color: $saiWhite;
+        text-transform: uppercase;
+        @include transitionEase(200ms);
+        &:hover{
+            color: $saiRed;
+        }
+    }
+}
+
+.socialMediaContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    min-width: 150px;
+    
+    a{
+        cursor: pointer;
+    
+        path{
+            fill: $saiWhite;
+            @include transitionEase(200ms);    
+        }
+
+        &:hover path{
+            fill: $saiRed;
+        }
+    }
+}
+
+
+///////////////////////////
+//    front-page.php     //
+///////////////////////////
+#hero{
+    background-color: $saiDarkRed;
+    background-image: url('images/pattern.png');
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    svg{
+        display: none;
+        height: 350px;
+        width: 350px;
+    }
+    .ribbonGrad{
+        
+        width: 75px;
+        height: 100%;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d6b881+0,7c6a46+100 */
+background: #d6b881; /* Old browsers */
+background: -moz-linear-gradient(top,  #d6b881 0%, #7c6a46 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #d6b881 0%,#7c6a46 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #d6b881 0%,#7c6a46 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6b881', endColorstr='#7c6a46',GradientType=0 ); /* IE6-9 */
+
+        position: absolute;
+        top: 0px;
+        right: 10%;
+        transform:  rotate(20deg) translateY(100%);        
+        opacity: 0;
+        @include transitionEase(1000ms);
+    }
+    .ribbonGrad.active{
+        transform:  rotate(20deg) translateY(0);        
+        opacity: 1;
+    }
+
+}
+
+
+///////////////////////////
+//    open table         //
+///////////////////////////
+.openTable{
+    width: 65%;
+    font-size: 14px;
+    text-transform: uppercase;
+    
+    .reserve{
+        float: left;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        font-size: 15px;
+    }
+}
+
+.powered-by-open-table{
+    display: none;
+}
+
+.otw-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.otw-input-wrap{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin-right: 10px;
+    
+    .selectric-wrapper{
+        width: 100%;
+        .label{
+            font-size: 14px;
+            line-height: 1em !important;
+            margin: 0 !important;
+            height: auto !important;
+            padding: 10px 0px 10px 1rem;
+        }
+    }
+}
+
+.otw-button-wrap{
+    .otw-submit{
+        height: 100%;
+        border: 0px;
+        background-color: white;
+        cursor: pointer;
+        font-family: $openSans;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}
+
+#date-otw_widget-2{
+    width: 100%;
+    font-family: $openSans;
+    font-size: 14px;
+    font-weight: 100;
+    height: 100%;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+
+.selectric .button{
+    height: 100% !important;
+}
+
+
+///////////////////////////
+//    header menu mobile //
+///////////////////////////
+.headerMobileButton{
+    display: none;
+    cursor: pointer;
+    svg{
+        height: 35px;
+        width: 35px;
+        stroke: $saiWhite;
+    }
+}
+
+.headerMobileMenu{
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 35px;
+    display: none;
+    
+    .closeMenu{
+        position: absolute;
+        top: 20px;
+        right: 3%;
+        font-size: 40px;
+        cursor: pointer;
+    }
+    
+    .menuLinks{
+        margin-top: 30px;
+        .headerMenuPages{
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            a{
+                color: $saiWhite;
+                @include transitionEase(200ms);
+                &:hover{
+                    color: $saiRed;
+                }
+            }
+        }
+    }
+    
+    .openTableMobile{
+        max-width: 450px;
+        margin: 25px auto;
+        padding: 10px;
+        border-top: 1px solid $saiWhite;
+        .reserve{
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        
+        #date-otw_widget-2{
+            height: 36px;
+        }
+        .otw-wrapper{
+            flex-direction: column;
+            .otw-input-wrap{
+                width: 100%;
+            }
+            .otw-button-wrap{
+                margin-top: 15px;
+                text-align: center;
+                input{
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+    
+    .socialMediaContainer{
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 672px){
+    .headerContactInfo{
+        font-size: 10px;
+    }
+    .headerphone1{
+        margin-bottom: 1px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 960px){
+    .ribbonGrad{
+        opacity: 0 !important;
+    }
+    .headerMenu{
+        display: none;
+    }
+    
+    .headerPhone1, .headerPhone2{
+        display: inline-block;
+    }
+    
+    .lowerHeader{
+        transform: translateY(100%);
+    }
+    
+    .headerMobileButton{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    
+}
